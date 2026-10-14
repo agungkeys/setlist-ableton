@@ -1,0 +1,72 @@
+{
+  "setlist": [
+    {
+      "id": 1,
+      "title": "SONG 1",
+      "sceneIndex": 0,
+      "color": "#4a90d9",
+      "notes": "Opening set",
+      "bpm": 128,
+      "key": "Am",
+      "duration": 0
+    },
+    {
+      "id": 2,
+      "title": "SONG 2",
+      "sceneIndex": 1,
+      "color": "#4a90d9",
+      "notes": "",
+      "bpm": 124,
+      "key": "C",
+      "duration": 0
+    },
+    {
+      "id": 3,
+      "title": "SONG 3",
+      "sceneIndex": 2,
+      "color": "#4a90d9",
+      "notes": "",
+      "bpm": 122,
+      "key": "G",
+      "duration": 0
+    },
+    {
+      "id": 4,
+      "title": "SONG 4",
+      "sceneIndex": 3,
+      "color": "#ff6b9d",
+      "notes": "NOW PLAYING",
+      "bpm": 120,
+      "key": "F",
+      "duration": 0
+    },
+    {
+      "id": 5,
+      "title": "SONG 5",
+      "sceneIndex": 4,
+      "color": "#4a90d9",
+      "notes": "",
+      "bpm": 118,
+      "key": "Em",
+      "duration": 0
+    }
+  ],
+  "currentIndex": 3,
+  "sections": [
+    {
+      "id": 1001,
+      "name": "Opening",
+      "startIndex": 0,
+      "endIndex": 2,
+      "color": "#9b59b6"
+    },
+    {
+      "id": 1002,
+      "name": "Main Set",
+      "startIndex": 3,
+      "endIndex": 4,
+      "color": "#e74c3c"
+    }
+  ],
+  "savedAt": "2026-10-10T00:00:00.000Z"
+}

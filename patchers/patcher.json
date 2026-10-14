@@ -1,0 +1,311 @@
+{
+  "patcher": {
+    "fileversion": 1,
+    "appversion": {
+      "major": 8,
+      "minor": 6,
+      "revision": 2,
+      "architecture": "x64",
+      "modernui": 1
+    },
+    "classnamespace": "box",
+    "rect": [100, 100, 800, 600],
+    "openinpresentation": 1,
+    "defaultpatcherview": 1,
+    "bglocked": 0,
+    "openrect": [0, 0, 800, 600],
+    "defaultel": 1,
+    "gridsize": [15, 15],
+    "boxes": [
+      {
+        "maxclass": "newobj",
+        "text": "js setlist.js",
+        "patching_rect": [30, 30, 100, 22],
+        "numinlets": 0,
+        "numoutlets": 1,
+        "id": "setlist_js"
+      },
+      {
+        "maxclass": "message",
+        "text": "init",
+        "patching_rect": [30, 70, 50, 18],
+        "numinlets": 2,
+        "numoutlets": 1,
+        "outlettype": [""],
+        "id": "msg_init"
+      },
+      {
+        "maxclass": "button",
+        "patching_rect": [30, 110, 24, 24],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": ["bang"],
+        "id": "btn_init"
+      },
+      {
+        "maxclass": "newobj",
+        "text": "prepend init",
+        "patching_rect": [30, 150, 80, 20],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": [""],
+        "id": "prepend_init"
+      },
+      {
+        "maxclass": "newobj",
+        "text": "prepend add",
+        "patching_rect": [30, 190, 80, 20],
+        "numinlets": 2,
+        "numoutlets": 1,
+        "outlettype": [""],
+        "id": "prepend_add"
+      },
+      {
+        "maxclass": "message",
+        "text": "add \"New Song\" 0 \"#4a90d9\"",
+        "patching_rect": [30, 230, 180, 18],
+        "numinlets": 2,
+        "numoutlets": 1,
+        "outlettype": [""],
+        "id": "msg_add_song"
+      },
+      {
+        "maxclass": "button",
+        "patching_rect": [30, 270, 24, 24],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": ["bang"],
+        "id": "btn_add_song"
+      },
+      {
+        "maxclass": "newobj",
+        "text": "prepend remove",
+        "patching_rect": [30, 310, 90, 20],
+        "numinlets": 2,
+        "numoutlets": 1,
+        "outlettype": [""],
+        "id": "prepend_remove"
+      },
+      {
+        "maxclass": "number",
+        "patching_rect": [30, 350, 50, 22],
+        "numinlets": 1,
+        "numoutlets": 2,
+        "outlettype": ["", "bang"],
+        "id": "num_remove_id"
+      },
+      {
+        "maxclass": "newobj",
+        "text": "prepend clear",
+        "patching_rect": [30, 390, 90, 20],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": [""],
+        "id": "prepend_clear"
+      },
+      {
+        "maxclass": "button",
+        "patching_rect": [30, 430, 24, 24],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": ["bang"],
+        "id": "btn_clear"
+      },
+      {
+        "maxclass": "button",
+        "patching_rect": [200, 110, 60, 24],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": ["bang"],
+        "id": "btn_play"
+      },
+      {
+        "maxclass": "newobj",
+        "text": "prepend play",
+        "patching_rect": [200, 150, 80, 20],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": [""],
+        "id": "prepend_play"
+      },
+      {
+        "maxclass": "button",
+        "patching_rect": [300, 110, 60, 24],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": ["bang"],
+        "id": "btn_stop"
+      },
+      {
+        "maxclass": "newobj",
+        "text": "prepend stop",
+        "patching_rect": [300, 150, 80, 20],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": [""],
+        "id": "prepend_stop"
+      },
+      {
+        "maxclass": "button",
+        "patching_rect": [400, 110, 60, 24],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": ["bang"],
+        "id": "btn_next"
+      },
+      {
+        "maxclass": "newobj",
+        "text": "prepend next",
+        "patching_rect": [400, 150, 80, 20],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": [""],
+        "id": "prepend_next"
+      },
+      {
+        "maxclass": "button",
+        "patching_rect": [500, 110, 60, 24],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": ["bang"],
+        "id": "btn_prev"
+      },
+      {
+        "maxclass": "newobj",
+        "text": "prepend prev",
+        "patching_rect": [500, 150, 80, 20],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": [""],
+        "id": "prepend_prev"
+      },
+      {
+        "maxclass": "button",
+        "patching_rect": [600, 110, 80, 24],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": ["bang"],
+        "id": "btn_refresh"
+      },
+      {
+        "maxclass": "newobj",
+        "text": "prepend refresh",
+        "patching_rect": [600, 150, 90, 20],
+        "numinlets": 1,
+        "numoutlets": 1,
+        "outlettype": [""],
+        "id": "prepend_refresh"
+      },
+      {
+        "maxclass": "comment",
+        "text": "SETLIST MANAGER v1.0",
+        "patching_rect": [30, 10, 150, 20],
+        "id": "comment_title"
+      }
+    ],
+    "lines": [
+      {
+        "patchline": {
+          "source": ["btn_init", 0],
+          "destination": ["prepend_init", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["prepend_init", 0],
+          "destination": ["setlist_js", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["msg_init", 0],
+          "destination": ["setlist_js", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["btn_add_song", 0],
+          "destination": ["prepend_add", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["prepend_add", 0],
+          "destination": ["setlist_js", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["btn_play", 0],
+          "destination": ["prepend_play", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["prepend_play", 0],
+          "destination": ["setlist_js", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["btn_stop", 0],
+          "destination": ["prepend_stop", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["prepend_stop", 0],
+          "destination": ["setlist_js", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["btn_next", 0],
+          "destination": ["prepend_next", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["prepend_next", 0],
+          "destination": ["setlist_js", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["btn_prev", 0],
+          "destination": ["prepend_prev", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["prepend_prev", 0],
+          "destination": ["setlist_js", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["btn_refresh", 0],
+          "destination": ["prepend_refresh", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["prepend_refresh", 0],
+          "destination": ["setlist_js", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["btn_clear", 0],
+          "destination": ["prepend_clear", 0]
+        }
+      },
+      {
+        "patchline": {
+          "source": ["prepend_clear", 0],
+          "destination": ["setlist_js", 0]
+        }
+      }
+    ]
+  }
+}
